@@ -46,7 +46,7 @@ def producto_mas_caro():
     if len(inventario) == 0:
         print("El almacen esta vacio")
     else:
-        producto_caro = ('-inf')
+        producto_caro = float('-inf')
         for producto in range(1):
             if producto_caro < producto[1]:
                 producto_caro = producto
@@ -56,7 +56,7 @@ def producto_mas_barato():
     if len(inventario) == 0:
         print("El almacen esta vacio")
     else:
-        producto_barato = ('+inf')
+        producto_barato = float('+inf')
         for producto in inventario:
             if producto_barato > producto[1]:
                 producto_caro = producto
