@@ -17,7 +17,7 @@ def cargar_inventario():
     print(inventario)
     return producto
 
-def buscar_producto(inventario):
+def buscar_producto():
     if len(inventario) == 0:
         print("El almacen se encuentra vacio")
     else:
@@ -31,7 +31,7 @@ def buscar_producto(inventario):
         else: 
             print(producto)
 
-def ordenar_inventario(inventario):
+def ordenar_inventario():
     if not inventario:
         print("No hay productos en el inventario.")
         return
@@ -42,7 +42,7 @@ def ordenar_inventario(inventario):
                 inventario[j], inventario[j+1] = inventario[j+1], inventario[j]
     print(f"Inventario ordenado por precio de manera ascendente: {inventario}")
     
-def producto_mas_caro(inventario):
+def producto_mas_caro():
     if len(inventario) == 0:
         print("El almacen esta vacio")
     else:
@@ -52,7 +52,7 @@ def producto_mas_caro(inventario):
                 producto_caro = producto
         print(f"El producto mas caro es: {producto_caro}")
 
-def producto_mas_barato(inventario):
+def producto_mas_barato():
     if len(inventario) == 0:
         print("El almacen esta vacio")
     else:
@@ -62,7 +62,7 @@ def producto_mas_barato(inventario):
                 producto_caro = producto
         print(f"El producto mas caro es: {producto_caro}")
 
-def producto_superior_15000(inventario):
+def producto_superior_15000():
     productos_mayores = [producto[1] > 15000]
     if productos_mayores:
         print("Productos con precio mayor a 15000:")

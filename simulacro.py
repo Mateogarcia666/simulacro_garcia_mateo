@@ -16,4 +16,7 @@ while True:
         producto_mas_barato()
     elif opcion == '5':
         producto_superior_15000()
-    
+    elif opcion == '6':
+        break
+    else: 
+        print("Opcion incorrecta seleccione 1,2,3,4,5,6: ")
